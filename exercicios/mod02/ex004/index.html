@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            transition: 1s;
+            transform: rotate(0deg);
+            background-color: black;
+            width: 300px;
+            height: 300px;
+
+        }
+        div:hover{
+            transition: 1s;
+            transform: rotate(90deg);
+            background-color: rgb(172, 172, 172);
+        }
+
+        div > p#oi{
+            transition: 1s;
+            color: white;
+            font-size: 2em;
+        }
+
+        div:hover > p#oi{
+            transition: 1s;
+            color: black;
+        }
+
+        div > p#tchau{
+            transform: rotate(0deg);
+            transition: 1s;
+            font-size: 2em;
+            display: none;
+        }
+
+        div:hover > p#tchau{
+            transform: rotate(-90deg);
+            transition: 1s;
+            display: block;
+        }
+        nav{
+            background-color: darkgrey;
+            width: 50px;
+            height: 50px;
+            box-shadow: 1px 1px 10px black;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="oi">Talvez seja preciso ver de outra perspectiva.</p>
+        <p id="tchau">Para enxergar a verdade.</p>
+    </div>
+    <nav></nav>
+</body>
+</html>

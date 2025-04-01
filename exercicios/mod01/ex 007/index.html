@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citação de Códigos</title>
+    <style>
+        body{
+            background-color: rgb(12, 12, 12);
+        }
+        .box{
+            background-color: rgb(36, 36, 46);
+            width: 500px;
+            height: 260px;
+            border-radius: 10px;
+        }
+        .dev{
+            background-color: rgb(36, 36, 46);
+            width: 500px;
+            height: 420px;
+            border-radius: 10px;
+        }
+        h2{
+            color:rgb(190, 176, 219);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        code{
+            color: white;
+        }
+        p {
+            color:white;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Código Sem Formatação</h2>
+        <hr>
+<p>
+    import sys
+    
+    class cores:
+      VERDE = '\033[32m'
+      AZUL = '\033[34m'
+      AMARELO = '\033[33m'
+      VERMELHO = '\033[31m'
+      PADRAO = '\033[0m'
+      # Para mais cores buscar a referência da tabela de cores
+    
+    mensagem1 = 'Estamos vivendo uma pandemia!'
+    
+    def msg(cor, mensagem):
+      print(cor + mensagem + cores.PADRAO)
+    
+    msg1 = msg(cores.AMARELO, mensagem1)
+    
+    print(msg(cores.VERMELHO, mensagem1))
+    print(msg(cores.VERDE, mensagem1))
+    print(msg(cores.AZUL, mensagem1))
+</p>
+    </div>
+    <div class="dev">
+        <h2>Código Com Formatação</h2>
+        <hr>
+        <pre>
+            <code>
+    import sys
+
+    class cores:
+        VERDE = '\033[32m'
+        AZUL = '\033[34m'
+        AMARELO = '\033[33m'
+        VERMELHO = '\033[31m'
+        PADRAO = '\033[0m'
+        # Para mais cores buscar a referência da tabela de cores
+
+    mensagem1 = 'Estamos vivendo uma pandemia!'
+
+    def msg(cor, mensagem):
+        print(cor + mensagem + cores.PADRAO)
+
+    msg1 = msg(cores.AMARELO, mensagem1)
+
+    print(msg(cores.VERMELHO, mensagem1))
+    print(msg(cores.VERDE, mensagem1))
+    print(msg(cores.AZUL, mensagem1))
+            </code>
+        </pre>
+    </div>
+</body>
+</html>
