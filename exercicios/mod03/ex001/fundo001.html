@@ -6,16 +6,35 @@
     <title>Document</title>
     <style>
         .quadrado{
-            border: solid 3px black;
+            border: 3px solid black;
+            background-color: lightgray;
+            border-radius: 15px;
+            box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.308);
             display: inline-block;
             width: 300px;
             height: 300px;
         }
+
+        .quadrado#q1{
+            background-image: url('imagens/pattern003.png');
+        }
+
+        .quadrado#q2{
+            background-image: linear-gradient(to top, rgb(12, 10, 15) 30%, rgb(226, 186, 100) 100%);
+        }
+
+        .quadrado#q3{
+            background-image: url('imagens/pattern002.png');
+        }
+        
+        body{
+            background-image: url(imagens/wallpaper004.jpg);
+        }
     </style>
 </head>
 <body>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
 </body>
 </html>
