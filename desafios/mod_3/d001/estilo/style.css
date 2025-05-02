@@ -1,1 +1,52 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body{
+    margin: 0px;
+}
+/*cabeçalho*/
+header{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header > h1{
+    font: normal normal  3em "Passion One", sans-serif;
+    margin: 0px 0px 10px 0px;
+}
+
+h2{
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+}
+
+header > h2 > a{
+    color: white;
+}
+header > h2 > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+/*corpo*/
+main{
+    background-color: white;
+    font: normal normal 1em "Sriracha", cursive, arial;
+}
+
+/*rodapé*/
+footer{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+footer > p{
+    margin: 0px;
+}
