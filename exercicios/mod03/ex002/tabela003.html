@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        @font-face {
+        font-family: 'DS-Digital';
+        src: url('/fonts/DS-DIGI.TTF') format('truetype'); /* ou .woff, .woff2 */
+        font-weight: normal;
+        font-style: normal;
+}
+        div.corpo{
+            width: 300px;
+            height: 400px;
+            background-color: rgb(30, 50, 60);
+            border: 3px solid black;
+            border-radius: 30px;
+        }
+
+        table{
+            width: 250px;
+            height: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        td.num{
+            background-color: gray;
+        }
+
+        td.op{
+            background-color: rgb(70, 70, 70);
+        }
+
+        td#equal{
+            background-color: rgb(255, 145, 0);
+        }
+
+        td#display{
+            height: 40px;
+            background-color: rgb(171, 185, 119);
+        }
+
+        td#space{
+            height: 40px;
+            border: none;
+            background-color: rgb(30, 50, 60);
+        }
+
+        thead td{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="corpo">
+        <table>
+            <thead>
+                <tr><td colspan="4" id="display">50135</td></tr>
+            </thead>
+            <thead>
+                <tr><td colspan="4" id="space"></td></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="num">7</td>
+                    <td class="num">8</td>
+                    <td class="num">9</td>
+                    <td class="op">*</td>
+                <tr>
+                    <td class="num">4</td>
+                    <td class="num">5</td>
+                    <td class="num">6</td>
+                    <td class="op">/</td>
+                </tr>
+                <tr>
+                    <td class="num">1</td>
+                    <td class="num">2</td>
+                    <td class="num">3</td>
+                    <td rowspan="2" id="equal">=</td>
+                </tr>
+                <tr>
+                    <td class="op">-</td>
+                    <td  class="op" colspan="2">+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
