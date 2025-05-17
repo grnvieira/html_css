@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            height: 400px;
+            width: 350px;
+        }
+    </style>
 </head>
 <body>
-    <p>Podemos criar iframes de alguns sites como o do Curso em Vídeo <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe></p>
+    <p>Podemos criar iframes de alguns sites como o do Curso em Vídeo <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">Seu navegador não é compatível com o iframe</iframe></p>
+    <!--
+    - Frameborder: só pode adotar dois parâmentros: (0) sem borda; (Qualquer número) Com borda
     
-    <p>Já outros como o do Google <iframe src="https://www.google.com/?hl=pt-BR" frameborder="0"> </iframe> Não funcionam, pois tem bloqueio de conteúdo</p>
+    - Scrolling: VSC não reconhece, mas é uma função vigente
+            ="auto" cria barra de rolagem se precisar
+            ="yes" cria a barra idependente se precisa ou não
+            ="no" não cria a barra de rolagem
+
+    - Pode-se colocar frase de erro entre as tags de iframe que aparecerá caso o navegador não consiga carregar
+
+    - Alteração no Css prevalece sobre o inline de tamanho
+    
+    - O tamanho padrão de iframe 300x150 wh
+
+    -->
+    
+    <p>Já outros como o do Google <iframe src="https://www.google.com/?hl=pt-BR" frameborder="0" width="150px" height="200">Seu navegador não é compatível com o iframe</iframe> Não funcionam, pois tem bloqueio de conteúdo</p>
 </body>
 </html>
